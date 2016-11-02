@@ -1,0 +1,14 @@
+{
+  "name": "xmlfile2jsonfile",
+  "version": "1.0.0",
+  "description": "xml file convert to json file based on nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "colmeluna",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^1.0.0"
+  }
+}

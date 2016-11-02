@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--Xls2Xml自动生成:   消除元素信息(BlockData.xml)-->
+<ROWDATA>
+  <ROW name="蓝色" image="bu_blue.png" key="1"/>
+  <ROW name="灰色" image="bu_hui.png" key="2"/>
+  <ROW name="绿色" image="bu_lv.png" key="3"/>
+  <ROW name="红色" image="bu_red.png" key="4"/>
+  <ROW name="黄色" image="bu_yellow.png" key="5"/>
+  <ROW name="紫色" image="bu_zi.png" key="6"/>
+</ROWDATA>
