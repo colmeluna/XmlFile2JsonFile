@@ -1,8 +1,14 @@
-var fs=require('fs-extra');
+var fs = require('fs-extra');
+var path = require('path');
 var xml2js = require('xml2js');
 
+var cwdPath = process.cwd();
+var nowPath = path.resolve(cwdPath, '../../../../');
+var jsonfile = nowPath+'/json/';
+var xmlfile = nowPath+'/xml/';
+
 exports.readXmlFileAndWriteToJson = function(filename, callback){
-    fs.readFile('xml/'+filename,function(err,data) {
+    fs.readFile(xmlfile+filename,function(err,data) {
         if (err)
             throw err;
         var xmlParser = new xml2js.Parser({explicitArray: false, ignoreAttrs: false, explicitRoot: false, mergeAttrs:true});
@@ -28,7 +34,7 @@ exports.readXmlFileAndWriteToJson = function(filename, callback){
             //console.log('writeJsonString '+writeJsonString);
 
             //写入.json 文件
-            fs.writeFile('json/'+jsonFileNameFullName,writeJsonString,function(err){
+            fs.writeFile(jsonfile+jsonFileNameFullName,writeJsonString,function(err){
                 if(err) throw err;
                 console.log("write JSON into "+jsonFileName+".json file success!");
                 callback(err);

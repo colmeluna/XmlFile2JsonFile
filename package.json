@@ -1,8 +1,8 @@
 {
-  "name": "xmlfile2jsonfile",
+  "name": "Xmlfile2Jsonfile",
   "version": "1.0.0",
+  "main": "index.html",
   "description": "xml file convert to json file based on nodejs",
-  "main": "index.js",
   "scripts": {
     "test": "node test.js"
   },
@@ -10,5 +10,8 @@
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^1.0.0"
+  },
+  "devDependencies": {
+    "path": "^0.12.7"
   }
 }
